@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Header from "./Components/Header";
+import Hamburger from "./Components/Hamburger";
 class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Hamburger />
       </div>
     );
   }

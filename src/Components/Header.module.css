@@ -1,11 +1,10 @@
 .header {
   max-width: 100%;
   width: 100%;
-  background-color: #fff;
+  background-color: lightblue;
   min-height: 120px;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
+
   align-items: center;
 }
 .header nav ul {
@@ -47,4 +46,24 @@
 }
 .header img {
   width: 270px;
+}
+
+@media only screen and (min-width: 0) {
+  .header nav {
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 900) {
+  .header nav {
+    display: flex;
+  }
+  .header {
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 500) {
 }
