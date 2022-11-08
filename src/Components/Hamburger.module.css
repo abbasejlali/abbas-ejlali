@@ -1,14 +1,17 @@
 .divmain {
   width: 55px;
   height: 55px;
-  /* background-color: lightcoral; */
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
-  top: 10px;
-  left: 30px;
   cursor: pointer;
+  z-index: 99;
+  transition: left 0.2s ease-in-out;
+  -webkit-transition: left 0.2s ease-in-out;
+  -moz-transition: left 0.2s ease-in-out;
+  -ms-transition: left 0.2s ease-in-out;
+  -o-transition: left 0.2s ease-in-out;
 }
 .divmain > div {
   width: 100%;
@@ -19,7 +22,11 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   background-color: white;
-  /* border: 0.5px solid #929292; */
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
 }
 
 @media only screen and (min-width: 0) {

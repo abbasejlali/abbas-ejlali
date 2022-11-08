@@ -7,7 +7,8 @@
 
   align-items: center;
 }
-.header nav ul {
+.header nav ul,
+.hambergurmenu nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -17,16 +18,18 @@
   padding-left: 30px !important;
 }
 
-.header nav ul li {
+.header nav ul li,
+.hambergurmenu nav ul li {
   padding: 0 15px 0 15px;
   cursor: pointer;
   display: block;
 }
-.header nav ul li a {
+.header nav ul li a,
+.hambergurmenu nav ul li a {
   font-family: "Rubik-Regular";
   font-size: 18px;
   padding: 10px;
-  color: #191e10;
+  color: #00082e;
   transition: all 0.4s ease-in-out;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -35,7 +38,8 @@
   transition-duration: 0;
 }
 
-.header nav ul li a:hover {
+.header nav ul li a:hover,
+.hambergurmenu nav ul li a:hover {
   background-color: #ff3a4a;
   border-radius: 14px;
   -webkit-border-radius: 14px;
@@ -56,14 +60,48 @@
     display: flex;
     justify-content: flex-end;
   }
+  .hambergurmenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #ff3a4a;
+    display: flex;
+    flex-direction: column;
+    z-index: 90;
+    transition: left 0.3s ease-in-out;
+    -webkit-transition: left 0.3s ease-in-out;
+    -moz-transition: left 0.3s ease-in-out;
+    -ms-transition: left 0.3s ease-in-out;
+    -o-transition: left 0.3s ease-in-out;
+  }
+  .hambergurmenu nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 15px 0 15px;
+  }
+  .hambergurmenu nav ul li {
+    padding-top: 25px;
+  }
+  .hambergurmenu nav ul li a {
+    color: white;
+  }
+  .hambergurmenu nav ul li a:hover {
+    background-color: white;
+    color: #ff3a4a;
+  }
 }
-@media only screen and (min-width: 900) {
+@media only screen and (min-width: 900px) {
   .header nav {
     display: flex;
   }
   .header {
     justify-content: space-between;
   }
+  .hambergurmenu {
+    display: none;
+  }
 }
-@media only screen and (min-width: 500) {
+@media only screen and (min-width: 500px) {
 }
