@@ -6,8 +6,13 @@
   font-family: "Rubik-Regular";
   src: url(./fonts/Rubik-Regular.ttf) format(TrueType);
 }
-
+@font-face {
+  font-family: "Rufina-Bold";
+  src: url(./fonts/Rufina-Bold.ttf) format(TrueType);
+}
 * {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
 }

@@ -33,10 +33,10 @@
     display: flex;
   }
 }
+@media only screen and (min-width: 500px) {
+}
 @media only screen and (min-width: 900px) {
   .divmain {
     display: none;
   }
-}
-@media only screen and (min-width: 500px) {
 }
