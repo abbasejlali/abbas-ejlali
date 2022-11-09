@@ -21,29 +21,41 @@ class Hamburger extends Component {
           style={
             this.state.open
               ? { top: "20px", left: "219px" }
-              : { top: "34px", left: "30px" }
+              : { top: "10px", left: "22px" }
           }
           className={styles.divmain}
         >
           <div
             style={
               this.state.open
-                ? { transform: "rotate(-45deg)", transformOrigin: "50px" }
-                : { transform: "rotate(0)" }
+                ? {
+                    transform: "rotate(-45deg)",
+                    transformOrigin: "40px",
+                    backgroundColor: "white",
+                  }
+                : { transform: "rotate(0)", backgroundColor: "#ff3a4a" }
             }
           ></div>
           <div
             style={
               this.state.open
-                ? { translatex: "-100%", opacity: "0" }
-                : { translatex: "0", opacity: "1" }
+                ? {
+                    translatex: "-100%",
+                    opacity: "0",
+                    backgroundColor: "white",
+                  }
+                : { translatex: "0", opacity: "1", backgroundColor: "#ff3a4a" }
             }
           ></div>
           <div
             style={
               this.state.open
-                ? { transform: "rotate(45deg)", transformOrigin: "48px" }
-                : { transform: "rotate(0)" }
+                ? {
+                    transform: "rotate(45deg)",
+                    transformOrigin: "40px",
+                    backgroundColor: "white",
+                  }
+                : { transform: "rotate(0)", backgroundColor: "#ff3a4a" }
             }
           ></div>
         </div>
