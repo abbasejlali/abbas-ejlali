@@ -25,6 +25,11 @@
   color: #00082e;
   text-align: justify;
 }
+.headerdiv span {
+  margin-top: 10px;
+  color: #00082eac;
+}
+
 .headerdiv button {
   max-width: 270px;
   width: 100%;
